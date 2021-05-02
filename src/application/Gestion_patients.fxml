@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller_Gestion_patients">
+   <children>
+      <ImageView fitHeight="79.0" fitWidth="72.0" layoutX="294.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/patients.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="366.0" layoutY="33.0" text="Gestion Patients" textFill="#5aa4ed">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="169.0" fitWidth="270.0" layoutX="495.0" layoutY="224.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/529-5292982_fiche-d-inscription-application-form-form-icon-hd.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="select_fich" layoutX="540.0" layoutY="421.0" mnemonicParsing="false" onAction="#select_fiche_diagnostics_action" prefHeight="32.0" prefWidth="130.0" style="-fx-background-color: #69ded5;" stylesheets="@../css%20buttons/selectfich.css" text="Select">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="501.0" layoutY="169.0" text="Fiches Patients" textFill="#1f2e2d" textOverrun="CLIP">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="162.0" fitWidth="165.0" layoutX="201.0" layoutY="228.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/diagnostics.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="196.0" layoutY="169.0" text="Diagnostics " textFill="#1f2e2d" textOverrun="CLIP">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Button fx:id="select_diagnostics" layoutX="217.0" layoutY="421.0" mnemonicParsing="false" onAction="#select_diagnostics_button_action" prefHeight="32.0" prefWidth="130.0" style="-fx-background-color: #69ded5;" stylesheets="@../css%20buttons/diagnostics.css" text="Select">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="39.0" fitWidth="34.0" layoutX="13.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/goback.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="retour_id" layoutX="43.0" layoutY="23.0" onMouseClicked="#retour_clicked" prefHeight="30.0" prefWidth="63.0" text="Retour">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

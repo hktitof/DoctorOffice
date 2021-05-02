@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="password_code" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller_AdminPage">
+   <children>
+      <Label layoutX="395.0" layoutY="37.0" text="Admin Cpannel" textFill="#00bdff">
+         <font>
+            <Font size="42.0" />
+         </font>
+      </Label>
+      <Label layoutX="571.0" layoutY="174.0" text="List of users" textFill="#ff6900">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="214.0" text="Change password of the user" textFill="#ff6900">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Button fx:id="change_button" layoutX="119.0" layoutY="414.0" mnemonicParsing="false" onAction="#update" prefHeight="26.0" prefWidth="147.0" style="-fx-background-color: #00bdff;" stylesheets="@../css%20buttons/changebutton.css" text="Change">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <TextField fx:id="new_password" layoutX="182.0" layoutY="346.0" prefHeight="34.0" prefWidth="171.0" promptText="new password" />
+      <Label layoutX="23.0" layoutY="349.0" prefHeight="28.0" prefWidth="147.0" text="New Password :">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="286.0" text="Selected user :">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <BorderPane layoutX="395.0" layoutY="230.0" prefHeight="245.0" prefWidth="488.0">
+         <center>
+            <TableView fx:id="table" onMousePressed="#set_label_method" prefHeight="153.0" prefWidth="488.0" BorderPane.alignment="CENTER">
+              <columns>
+                <TableColumn fx:id="idcode" prefWidth="101.60000610351562" text="id_user" />
+                <TableColumn fx:id="usernamecode" prefWidth="179.20001220703125" text="username" />
+                  <TableColumn fx:id="passwordcode" prefWidth="167.2000732421875" text="password" />
+              </columns>
+            </TableView>
+         </center>
+      </BorderPane>
+      <ImageView fitHeight="107.0" fitWidth="110.0" layoutX="268.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/adminicon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="34.0" fitWidth="40.0" layoutX="756.0" layoutY="543.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/logout-512.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="admin_logout_label" layoutX="790.0" layoutY="543.0" onDragDetected="#logout_clicked" onMouseClicked="#logout_clicked" text="Log out" textFill="#ca0a0a">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_set_user_selected" layoutX="182.0" layoutY="286.0" textFill="RED">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

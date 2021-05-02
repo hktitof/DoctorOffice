@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller_Medecinpage">
+   <children>
+      <ImageView fitHeight="101.0" fitWidth="102.0" layoutX="213.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/doctor%20icon.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="304.0" layoutY="36.0" text="Medecin Control panel" textFill="#5aa4ed">
+         <font>
+            <Font size="39.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="40.0" fitWidth="53.0" layoutX="763.0" layoutY="546.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/logout-512.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="logout_id" layoutX="803.0" layoutY="546.0" onMouseClicked="#logout_action" text="Log out" textFill="#bc1e2d">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="154.0" fitWidth="145.0" layoutX="119.0" layoutY="221.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/patients.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="145.0" fitWidth="188.0" layoutX="356.0" layoutY="224.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/ordannance%20real.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="634.0" layoutY="218.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/ordanance.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="106.0" layoutY="174.0" text="Gestion Patients" textFill="#ff9143">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="368.0" layoutY="174.0" prefHeight="35.0" prefWidth="145.0" text="Ordonnance" textFill="#ff9143">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="626.0" layoutY="174.0" text="Certificat Medical" textFill="#ff9143">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="select_gestion_patients" layoutX="141.0" layoutY="413.0" mnemonicParsing="false" onAction="#action_select_gestion_patients" prefHeight="26.0" prefWidth="102.0" style="-fx-background-color: #81c2fc;" stylesheets="@../css%20buttons/button%20select%201.css" text="Select">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="select_ordonnance" layoutX="390.0" layoutY="413.0" mnemonicParsing="false" onAction="#action_select_ordonnacne" prefHeight="30.0" prefWidth="102.0" style="-fx-background-color: #81c2fc;" stylesheets="@../css%20buttons/button%20select%202.css" text="Select">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="select_certificat_medecal" layoutX="673.0" layoutY="413.0" mnemonicParsing="false" onAction="#action_select_certificat_medecal" prefHeight="30.0" prefWidth="102.0" style="-fx-background-color: #81c2fc;" stylesheets="@../css%20buttons/button%20select%203.css" text="Select">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

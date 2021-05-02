@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller_Ordonnance_Page">
+   <children>
+      <ImageView fitHeight="75.0" fitWidth="99.0" layoutX="401.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/ordannance%20real.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="490.0" layoutY="36.0" text="Ordonnace" textFill="#ff9900">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="39.0" fitWidth="34.0" layoutX="14.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/goback.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="Retouid" layoutX="44.0" layoutY="25.0" onMouseClicked="#Retour_label_mouse_clicked" prefHeight="30.0" prefWidth="63.0" text="Retour">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="62.0" layoutY="140.0" text="identification du prescripteur" textFill="#ff9900">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textfield_nom" layoutX="151.0" layoutY="190.0" />
+      <Label layoutX="29.0" layoutY="192.0" text="nom :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textfield_address" layoutX="151.0" layoutY="229.0" />
+      <Label layoutX="29.0" layoutY="231.0" text="adresse :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textfield_qualite" layoutX="151.0" layoutY="266.0" />
+      <Label layoutX="29.0" layoutY="268.0" text="qualité :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textfield_denomination" layoutX="151.0" layoutY="378.0" />
+      <Label layoutX="29.0" layoutY="380.0" text="dénomination :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textfield_forme" layoutX="151.0" layoutY="415.0" />
+      <Label layoutX="29.0" layoutY="417.0" text="forme :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="124.0" layoutY="330.0" text="médicament" textFill="#ff9900">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textfield_posologie" layoutX="151.0" layoutY="454.0" />
+      <Label layoutX="29.0" layoutY="456.0" text="posologie :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textfield_mode_demploi" layoutX="151.0" layoutY="491.0" />
+      <Label layoutX="29.0" layoutY="493.0" text="mode d’emploi :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Line endX="152.39999389648438" endY="-1.52587890625E-5" layoutX="158.0" layoutY="177.0" startX="-134.800048828125" startY="-1.52587890625E-5" />
+      <Line endX="152.39999389648438" endY="-1.52587890625E-5" layoutX="158.0" layoutY="317.0" startX="-134.80001831054688" />
+      <Line endX="152.39999389648438" endY="-1.52587890625E-5" layoutX="158.0" layoutY="365.0" startX="-135.60000610351562" startY="-1.52587890625E-5" />
+      <Line endX="152.39999389648438" endY="-1.52587890625E-5" layoutX="158.0" layoutY="529.0" startX="-135.60000610351562" startY="-1.52587890625E-5" />
+      <Line endX="142.89999389648438" endY="-9.500015258789062" layoutX="168.0" layoutY="187.0" startX="142.89999389648438" startY="130.5" />
+      <Line endX="143.699951171875" endY="-4.5000152587890625" layoutX="-121.0" layoutY="181.0" startX="143.49285888671875" startY="135.29287719726562" />
+      <Line endX="143.89999389648438" endY="-13.5" layoutX="167.0" layoutY="378.0" startX="143.89999389648438" startY="151.0" />
+      <Line endX="143.89999389648438" endY="-13.5" layoutX="-121.0" layoutY="378.0" startX="143.89999389648438" startY="151.0" />
+      <Button fx:id="add_id" layoutX="12.0" layoutY="548.0" mnemonicParsing="false" onAction="#action_add_button" prefHeight="31.0" prefWidth="74.0" style="-fx-background-color: bc1e2d;" stylesheets="@../css%20buttons/button.css" text="Add" textFill="#9c4242">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="update_id" layoutX="94.0" layoutY="548.0" mnemonicParsing="false" onAction="#action_update_button" prefHeight="31.0" prefWidth="74.0" style="-fx-background-color: ff8a00;" stylesheets="@../css%20buttons/button2.css" text="Update" textFill="#00ff83">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="delete_id" layoutX="177.0" layoutY="548.0" mnemonicParsing="false" onAction="#action_delete_button" prefHeight="31.0" prefWidth="74.0" style="-fx-background-color: #00ff59;" stylesheets="@../css%20buttons/button3.css" text="Delete" textFill="#00ff59">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <BorderPane layoutX="336.0" layoutY="200.0" prefHeight="330.0" prefWidth="650.0">
+         <center>
+            <TableView fx:id="table" onMousePressed="#onEdit" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+              <columns>
+                <TableColumn fx:id="col_id" prefWidth="35.99993896484375" text="id" />
+                <TableColumn fx:id="col_nom" prefWidth="80.7999267578125" text="nom" />
+                  <TableColumn fx:id="col_address" prefWidth="92.0" text="address" />
+                  <TableColumn fx:id="col_qualite" prefWidth="67.20001220703125" text="qualite" />
+                  <TableColumn fx:id="col_denomination" prefWidth="95.2000732421875" text="denomination" />
+                  <TableColumn fx:id="col_forme" prefWidth="69.60003662109375" text="forme" />
+                  <TableColumn fx:id="col_posologie" minWidth="0.0" prefWidth="88.00006103515625" text="posologie" />
+                  <TableColumn fx:id="col_mode_emploi" prefWidth="119.9998779296875" text="Mode d'emploi" />
+              </columns>
+            </TableView>
+         </center>
+      </BorderPane>
+      <Label layoutX="347.0" layoutY="162.0" text="Search :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textfield_search" layoutX="422.0" layoutY="163.0" prefHeight="26.0" prefWidth="553.0" promptText="nom or form" />
+      <Label layoutX="594.0" layoutY="118.0" text="List of ordonnances " textFill="#ff9900">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Button fx:id="clear_id" layoutX="258.0" layoutY="548.0" mnemonicParsing="false" onAction="#action_clear_button" prefHeight="31.0" prefWidth="81.0" style="-fx-background-color: #00cfff;" stylesheets="@../css%20buttons/clear%20button%20css%20design.css" text="Clear All">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
